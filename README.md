@@ -33,5 +33,5 @@ To develop a secure method for storing and transmitting medical images using:
 - Anannya Chandra  
 - Nidhi Kumari  
 - Sourav Das  
-### Supervised by Indrajit Das, Assistant Professor, MEGHNAD SAHA INSTITUTE OF TECHNOLOGY (https://scholar.google.com/citations?user=jRfnKWEAAAAJ&hl=en)
+Supervised by Indrajit Das, Assistant Professor, MEGHNAD SAHA INSTITUTE OF TECHNOLOGY (https://scholar.google.com/citations?user=jRfnKWEAAAAJ&hl=en)
 
