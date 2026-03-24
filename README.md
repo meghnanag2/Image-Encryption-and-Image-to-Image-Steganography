@@ -6,7 +6,7 @@ This project presents a two-layer secure image transmission system that combines
 
 The system is designed around a simple but effective principle: first encrypt the image to ensure confidentiality, and then embed the encrypted image within another image to provide an additional layer of security through obscurity. This dual approach makes it significantly harder for unauthorized users to access or even detect the protected information.
 
----
+
 
 ## System Architecture
 
@@ -20,7 +20,7 @@ At the sender side, the original image is transformed into an encrypted represen
 
 At the receiver side, the reverse process is applied. The hidden data is first extracted from the stego image using the same key, and then decrypted to recover the original image.
 
----
+
 
 ## Methodology
 
@@ -34,7 +34,7 @@ The stego image is then transmitted through a communication channel, such as a n
 
 On the receiving end, the embedded data is extracted using the same key. This step reverses the steganographic process and reconstructs the encrypted image. Finally, the encrypted image is decrypted using the corresponding key to recover the original image.
 
----
+
 
 ## Implementation Details
 
@@ -50,7 +50,7 @@ The system ensures that:
 
 All transformations are deterministic, ensuring reproducibility and consistency across runs.
 
----
+
 
 ## Results
 
@@ -72,31 +72,14 @@ During extraction and decryption, the original image is successfully reconstruct
 
 Overall, the system achieves both confidentiality and concealment, which are critical for secure data transmission.
 
----
 
-## Key Insights
+
+## Insights
 
 One of the key observations from this project is that encryption alone is not sufficient when the goal is to avoid detection. While encryption protects the content, it does not hide the presence of data. By combining encryption with steganography, the system ensures that both the content and the existence of the message are protected.
 
 Another important insight is the trade-off between embedding capacity and image quality. While LSB substitution allows for efficient data hiding, excessive embedding can introduce visible distortions. Careful control of embedding depth is therefore necessary.
 
----
-
-## Limitations
-
-The current implementation uses relatively simple encryption and steganographic techniques. While effective for demonstration purposes, these methods may not be robust against advanced attacks or statistical detection techniques.
-
-Additionally, the approach may introduce slight visual noise in the reconstructed image, especially when operating at higher embedding capacities.
-
----
-
-## Future Work
-
-Future improvements could focus on strengthening both layers of the system. More advanced encryption techniques can be introduced to improve resistance against cryptographic attacks. On the steganography side, adaptive or transform-domain methods could be explored to reduce detectability.
-
-Another promising direction is extending the system to support text or multi-modal data embedding, as well as evaluating robustness against real-world compression and transmission noise.
-
----
 
 ## Conclusion
 
